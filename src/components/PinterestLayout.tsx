@@ -29,7 +29,7 @@ const PinterestLayout = () => {
       type: 'profile',
       title: 'Ashruth Pamidimarri',
       subtitle: 'Full Stack Developer',
-      image: 'profile.jpg',
+      image: `${import.meta.env.BASE_URL}profile.jpg`,
       height: 'h-80',
       onClick: () => setShowProfileModal(true)
     },

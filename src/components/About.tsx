@@ -32,7 +32,7 @@ const About = () => {
               {/* Main image container - 3:4 aspect ratio */}
               <div className="w-72 h-96 md:w-80 md:h-[427px] lg:w-96 lg:h-[512px] rounded-3xl overflow-hidden shadow-2xl border-3 border-white relative group-hover:border-white transition-all duration-500">
                 <img
-                  src="profile.jpg"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt="Profile"
                   className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-105 group-hover:rotate-1"
                 />

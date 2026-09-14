@@ -62,7 +62,7 @@ const ProfileModal = ({ onClose }: ProfileModalProps) => {
           <div className="absolute -bottom-16 left-8">
             <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden shadow-xl">
               <img
-                src="profile.jpg"
+                src={`${import.meta.env.BASE_URL}profile.jpg`}
                 alt="Ashruth Pamidimarri"
                 className="w-full h-full object-cover"
               />
