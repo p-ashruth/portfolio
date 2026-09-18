@@ -1,53 +1,57 @@
-import { useState } from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { useState } from "react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('sending');
+    setStatus("sending");
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    setStatus('success');
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setStatus("success");
+    setFormData({ name: "", email: "", subject: "", message: "" });
 
-    setTimeout(() => setStatus('idle'), 3000);
+    setTimeout(() => setStatus("idle"), 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     }));
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      detail: 'ashruthpamidimarri@gmail.com',
-      href: 'mailto:ashruthpamidimarri@gmail.com',
+      title: "Email",
+      detail: "ashruthpamidimarri@gmail.com",
+      href: "mailto:ashruthpamidimarri@gmail.com",
     },
     {
       icon: Phone,
-      title: 'Phone',
-      detail: '+91 77949 59643',
-      href: 'tel:+917794959643',
+      title: "Phone",
+      detail: "+91 77949 59643",
+      href: "tel:+917794959643",
     },
     {
       icon: MapPin,
-      title: 'Location',
-      detail: 'Hyderabad, India',
-      href: 'https://maps.app.goo.gl/9ymeYvZoyfEWWmZS7',
+      title: "Location",
+      detail: "Hyderabad, India",
+      href: "https://maps.app.goo.gl/9ymeYvZoyfEWWmZS7",
     },
   ];
 
@@ -55,12 +59,23 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
+          <h2
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            style={{
+              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+            }}
+          >
             Get In Touch
           </h2>
           <div className="w-20 h-1 bg-white mx-auto mb-6"></div>
-          <p className="text-lg text-white max-w-2xl mx-auto" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
-            Let's connect! Whether you have a question, want to collaborate, or just want to say hi, my inbox is always open.
+          <p
+            className="text-lg text-white max-w-2xl mx-auto"
+            style={{
+              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+            }}
+          >
+            Let's connect! Whether you have a question, want to collaborate, or
+            just want to say hi, my inbox is always open.
           </p>
         </div>
 
@@ -77,8 +92,23 @@ const Contact = () => {
                 />
 
                 <div className="text-white">
-                  <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Ashruth Pamidimarri</h3>
-                  <p className="text-white mb-6" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Full Stack Developer passionate about creating innovative solutions and bringing ideas to life through code.</p>
+                  <h3
+                    className="text-2xl font-bold mb-4"
+                    style={{
+                      fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                    }}
+                  >
+                    Ashruth Pamidimarri
+                  </h3>
+                  <p
+                    className="text-white mb-6"
+                    style={{
+                      fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                    }}
+                  >
+                    Full Stack Developer passionate about creating innovative
+                    solutions and bringing ideas to life through code.
+                  </p>
 
                   {/* Contact details */}
                   <div className="space-y-4">
@@ -111,11 +141,21 @@ const Contact = () => {
           {/* Right side - Contact form */}
           <div>
             <div className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 md:p-10">
-              <h3 className="text-2xl font-bold text-white mb-6" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Send me a message</h3>
+              <h3
+                className="text-2xl font-bold text-white mb-6"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Send me a message
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Your Name
                     </label>
                     <input
@@ -131,7 +171,10 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 mb-2"
+                    >
                       Your Email
                     </label>
                     <input
@@ -148,7 +191,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Subject
                   </label>
                   <input
@@ -164,7 +210,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -181,14 +230,14 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  disabled={status === 'sending'}
+                  disabled={status === "sending"}
                   className="w-full bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 hover:scale-105 transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  {status === 'sending' ? 'Sending...' : 'Send Message'}
+                  {status === "sending" ? "Sending..." : "Send Message"}
                   <Send size={20} />
                 </button>
 
-                {status === 'success' && (
+                {status === "success" && (
                   <div className="text-center text-green-600 font-medium">
                     Message sent successfully! I'll get back to you soon.
                   </div>

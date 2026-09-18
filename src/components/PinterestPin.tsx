@@ -1,5 +1,11 @@
-import { useState } from 'react';
-import { ExternalLink, Github, Heart, Share, MoreHorizontal } from 'lucide-react';
+import { useState } from "react";
+import {
+  ExternalLink,
+  Github,
+  Heart,
+  Share,
+  MoreHorizontal,
+} from "lucide-react";
 
 interface Pin {
   id: number;
@@ -28,7 +34,7 @@ const PinterestPin = ({ pin }: PinterestPinProps) => {
   };
 
   return (
-    <div 
+    <div
       className={`break-inside-avoid mb-6 bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer group ${pin.height}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -40,17 +46,17 @@ const PinterestPin = ({ pin }: PinterestPinProps) => {
           src={pin.image}
           alt={pin.title}
           className={`w-full object-cover transition-all duration-500 ${
-            imageLoaded ? 'opacity-100' : 'opacity-0'
-          } ${isHovered ? 'scale-105' : 'scale-100'}`}
-          style={{ height: pin.type === 'profile' ? '280px' : '200px' }}
+            imageLoaded ? "opacity-100" : "opacity-0"
+          } ${isHovered ? "scale-105" : "scale-100"}`}
+          style={{ height: pin.type === "profile" ? "280px" : "200px" }}
           onLoad={() => setImageLoaded(true)}
         />
-        
+
         {/* Loading placeholder */}
         {!imageLoaded && (
-          <div 
+          <div
             className="absolute inset-0 bg-gray-200 animate-pulse"
-            style={{ height: pin.type === 'profile' ? '280px' : '200px' }}
+            style={{ height: pin.type === "profile" ? "280px" : "200px" }}
           />
         )}
 
@@ -70,7 +76,7 @@ const PinterestPin = ({ pin }: PinterestPinProps) => {
             </div>
 
             {/* Action buttons for projects */}
-            {pin.type === 'project' && (
+            {pin.type === "project" && (
               <div className="absolute bottom-4 left-4 right-4 flex space-x-2">
                 <button className="flex-1 bg-white text-gray-800 py-2 px-4 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
                   <Github size={16} />
@@ -87,13 +93,19 @@ const PinterestPin = ({ pin }: PinterestPinProps) => {
 
         {/* Type Badge */}
         <div className="absolute top-4 left-4">
-          <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-            pin.type === 'profile' ? 'bg-blue-100 text-blue-800' :
-            pin.type === 'project' ? 'bg-green-100 text-green-800' :
-            pin.type === 'certification' ? 'bg-purple-100 text-purple-800' :
-            pin.type === 'achievement' ? 'bg-yellow-100 text-yellow-800' :
-            'bg-gray-100 text-gray-800'
-          }`}>
+          <span
+            className={`px-3 py-1 rounded-full text-xs font-medium ${
+              pin.type === "profile"
+                ? "bg-blue-100 text-blue-800"
+                : pin.type === "project"
+                  ? "bg-green-100 text-green-800"
+                  : pin.type === "certification"
+                    ? "bg-purple-100 text-purple-800"
+                    : pin.type === "achievement"
+                      ? "bg-yellow-100 text-yellow-800"
+                      : "bg-gray-100 text-gray-800"
+            }`}
+          >
             {pin.type.charAt(0).toUpperCase() + pin.type.slice(1)}
           </span>
         </div>
@@ -104,10 +116,8 @@ const PinterestPin = ({ pin }: PinterestPinProps) => {
         <h3 className="font-bold text-gray-800 text-lg mb-1 line-clamp-2">
           {pin.title}
         </h3>
-        <p className="text-gray-600 text-sm mb-2">
-          {pin.subtitle}
-        </p>
-        
+        <p className="text-gray-600 text-sm mb-2">{pin.subtitle}</p>
+
         {pin.description && (
           <p className="text-gray-500 text-sm mb-3 line-clamp-2">
             {pin.description}
@@ -134,7 +144,7 @@ const PinterestPin = ({ pin }: PinterestPinProps) => {
         )}
 
         {/* Profile specific content */}
-        {pin.type === 'profile' && (
+        {pin.type === "profile" && (
           <div className="mt-3 pt-3 border-t border-gray-100">
             <div className="flex items-center justify-between">
               <div>

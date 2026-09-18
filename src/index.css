@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,8 +17,18 @@ html.dark .astro-code span {
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,17 +36,22 @@ body {
 }
 
 /* Professional fonts for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
 }
 
 /* Font utility classes */
 .font-inter {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .font-mono {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 /* Pinterest-style masonry grid */
@@ -47,11 +62,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hide scrollbars for Netflix-style horizontal scroll */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
 }
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none; /* Safari and Chrome */
 }
 
 /* Line clamp utilities */
@@ -61,8 +76,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-
 
 /* Custom Pinterest-style animations */
 @keyframes fadeInUp {
@@ -185,7 +198,8 @@ html {
 }
 
 /* Decrease all items by 1% and prevent zoom scaling */
-html, body {
+html,
+body {
   zoom: 0.99 !important;
   transform: scale(0.99) !important;
   transform-origin: 0 0 !important;
@@ -200,7 +214,8 @@ html, body {
 
 /* Prevent zoom on mobile devices */
 @media screen and (max-width: 768px) {
-  html, body {
+  html,
+  body {
     -webkit-text-size-adjust: 100% !important;
     -moz-text-size-adjust: 100% !important;
     -ms-text-size-adjust: 100% !important;
@@ -277,7 +292,11 @@ nav button {
 }
 
 nav button:hover {
-  background: linear-gradient(to right, rgb(251, 146, 60), rgb(236, 72, 153)) !important;
+  background: linear-gradient(
+    to right,
+    rgb(251, 146, 60),
+    rgb(236, 72, 153)
+  ) !important;
   color: white !important;
 }
 
@@ -291,8 +310,6 @@ nav * {
 nav {
   isolation: isolate !important;
 }
-
-
 
 /* Dark theme skills progress bars with orange accent */
 .skills-dark-theme {
@@ -315,19 +332,28 @@ nav {
 }
 
 .skill-progress-fill::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   animation: shimmer-orange 2s infinite;
 }
 
 @keyframes shimmer-orange {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Clean timeline styles */
@@ -337,7 +363,7 @@ nav {
 }
 
 .timeline-item:not(:last-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 40px;
   top: 3rem;

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const MouseFollower = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -14,12 +14,12 @@ const MouseFollower = () => {
       setIsVisible(false);
     };
 
-    window.addEventListener('mousemove', updateMousePosition);
-    document.addEventListener('mouseleave', handleMouseLeave);
+    window.addEventListener("mousemove", updateMousePosition);
+    document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-      document.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener("mousemove", updateMousePosition);
+      document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 

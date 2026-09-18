@@ -1,16 +1,14 @@
-
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Certifications from './components/Certifications';
-import Contact from './components/Contact';
-import Navigation from './components/Navigation';
-import ScrollReveal from './components/ScrollReveal';
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
+import Navigation from "./components/Navigation";
+import ScrollReveal from "./components/ScrollReveal";
 
 function App() {
   return (
     <div className="min-h-screen bg-black">
-
       <Navigation />
 
       <main>

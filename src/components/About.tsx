@@ -3,7 +3,12 @@ const About = () => {
     <section id="about" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
+          <h2
+            className="text-4xl md:text-5xl font-bold mb-4 text-white"
+            style={{
+              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+            }}
+          >
             About Me
           </h2>
           <div className="w-20 h-1 bg-white mx-auto"></div>
@@ -12,11 +17,25 @@ const About = () => {
         <div className="grid lg:grid-cols-5 gap-12 items-center mb-16">
           {/* Content - smaller section */}
           <div className="lg:col-span-2 space-y-4">
-            <p className="text-lg text-white leading-relaxed" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
-              I’m a Computer Science Engineering student at SNIST with a strong foundation in Data Structures and Algorithms and experience in C, Java, Python, and JavaScript.
+            <p
+              className="text-lg text-white leading-relaxed"
+              style={{
+                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              }}
+            >
+              I’m a Computer Science Engineering student at SNIST with a strong
+              foundation in Data Structures and Algorithms and experience in C,
+              Java, Python, and JavaScript.
             </p>
-            <p className="text-lg text-white leading-relaxed" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
-              With 500+ LeetCode problems solved, a 9.11 CGPA, and projects like LRU Cache Simulator, FarmSmartAI, and a Trie-based AutoSearch Engine, I thrive on solving complex challenges.
+            <p
+              className="text-lg text-white leading-relaxed"
+              style={{
+                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              }}
+            >
+              With 500+ LeetCode problems solved, a 9.11 CGPA, and projects like
+              LRU Cache Simulator, FarmSmartAI, and a Trie-based AutoSearch
+              Engine, I thrive on solving complex challenges.
             </p>
           </div>
 
@@ -32,7 +51,7 @@ const About = () => {
               {/* Main image container - 3:4 aspect ratio */}
               <div className="w-72 h-96 md:w-80 md:h-[427px] lg:w-96 lg:h-[512px] rounded-3xl overflow-hidden shadow-2xl border-3 border-white relative group-hover:border-white transition-all duration-500">
                 <img
-                  src={`${import.meta.env.BASE_URL}profile.jpg`}
+                  src={`${import.meta.env.BASE_URL}pictures/profile/profile.jpg`}
                   alt="Profile"
                   className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-105 group-hover:rotate-1"
                 />
@@ -54,10 +73,20 @@ const About = () => {
         {/* Tech Skills Section - Icon Grid Layout */}
         <div className="bg-black rounded-3xl p-8 mb-12 border border-white shadow-2xl">
           <div className="text-center mb-12">
-            <p className="text-white text-sm uppercase tracking-wider mb-4" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
+            <p
+              className="text-white text-sm uppercase tracking-wider mb-4"
+              style={{
+                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              }}
+            >
               WHAT I BRING TO THE TABLE
             </p>
-            <h3 className="text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>
+            <h3
+              className="text-4xl md:text-5xl font-bold text-white"
+              style={{
+                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              }}
+            >
               Tech Skills
             </h3>
           </div>
@@ -66,56 +95,188 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-8">
             {/* First Row */}
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Python</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Python
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Java</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Java
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Power BI</span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
+                alt="Power BI"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Power BI
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>PostgreSQL</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                PostgreSQL
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>MySQL</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                alt="MySQL"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                MySQL
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>git</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                git
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>docker</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                alt="Docker"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                docker
+              </span>
             </div>
           </div>
 
           {/* Second Row */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>JavaScript</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                JavaScript
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>React JS</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                React JS
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Tailwind CSS</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind CSS"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Tailwind CSS
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Node JS</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Node JS
+              </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-12 h-12 mb-3" />
-              <span className="text-black font-semibold text-sm" style={{ fontFamily: 'Inter, system-ui, -apple-system, sans-serif' }}>Express JS</span>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                alt="Express.js"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                }}
+              >
+                Express JS
+              </span>
             </div>
           </div>
         </div>

@@ -1,4 +1,13 @@
-import { X, Github, Linkedin, Code, FileText, MapPin, Calendar, GraduationCap } from 'lucide-react';
+import {
+  X,
+  Github,
+  Linkedin,
+  Code,
+  FileText,
+  MapPin,
+  Calendar,
+  GraduationCap,
+} from "lucide-react";
 
 interface ProfileModalProps {
   onClose: () => void;
@@ -6,43 +15,46 @@ interface ProfileModalProps {
 
 const ProfileModal = ({ onClose }: ProfileModalProps) => {
   const skills = [
-    { name: 'Programming Languages', level: 90, color: 'bg-blue-500' },
-    { name: 'Data Structures & Algorithms', level: 85, color: 'bg-green-500' },
-    { name: 'Machine Learning', level: 85, color: 'bg-purple-500' },
-    { name: 'Full Stack Development', level: 88, color: 'bg-orange-500' }
+    { name: "Programming Languages", level: 90, color: "bg-blue-500" },
+    { name: "Data Structures & Algorithms", level: 85, color: "bg-green-500" },
+    { name: "Machine Learning", level: 85, color: "bg-purple-500" },
+    { name: "Full Stack Development", level: 88, color: "bg-orange-500" },
   ];
 
   const education = [
     {
-      year: '2025',
-      degree: 'Bachelor of Technology in CSE',
-      institution: 'Sreenidhi Institute of Science & Technology',
-      grade: 'CGPA: 9.11',
-      description: 'Specialized in Data Structures, Algorithms, and Full Stack Development.'
+      year: "2025",
+      degree: "Bachelor of Technology in CSE",
+      institution: "Sreenidhi Institute of Science & Technology",
+      grade: "CGPA: 9.11",
+      description:
+        "Specialized in Data Structures, Algorithms, and Full Stack Development.",
     },
     {
-      year: '2021',
-      degree: 'Intermediate Education',
-      institution: 'Board of Intermediate Education',
-      grade: 'MPC Stream',
-      description: 'Mathematics, Physics, Chemistry with strong analytical foundation.'
+      year: "2021",
+      degree: "Intermediate Education",
+      institution: "Board of Intermediate Education",
+      grade: "MPC Stream",
+      description:
+        "Mathematics, Physics, Chemistry with strong analytical foundation.",
     },
     {
-      year: '2019',
-      degree: 'Secondary Education',
-      institution: 'Board of Secondary Education',
-      grade: 'Excellent Performance',
-      description: 'Strong foundation in core subjects with early interest in technology.'
-    }
+      year: "2019",
+      degree: "Secondary Education",
+      institution: "Board of Secondary Education",
+      grade: "Excellent Performance",
+      description:
+        "Strong foundation in core subjects with early interest in technology.",
+    },
   ];
 
   const achievements = [
-    '500+ LeetCode Problems Solved',
-    'CGPA: 9.11 in Engineering',
-    'Multiple AI/ML Projects',
-    'Full Stack Development Experience',
-    'ServiceNow Certified',
-    'Machine Learning Certified'
+    "500+ LeetCode Problems Solved",
+    "CGPA: 9.11 in Engineering",
+    "Multiple AI/ML Projects",
+    "Full Stack Development Experience",
+    "ServiceNow Certified",
+    "Machine Learning Certified",
   ];
 
   return (
@@ -57,7 +69,7 @@ const ProfileModal = ({ onClose }: ProfileModalProps) => {
           >
             <X size={20} />
           </button>
-          
+
           {/* Profile Image */}
           <div className="absolute -bottom-16 left-8">
             <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden shadow-xl">
@@ -74,9 +86,13 @@ const ProfileModal = ({ onClose }: ProfileModalProps) => {
         <div className="pt-20 p-8">
           {/* Basic Info */}
           <div className="mb-8">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">Ashruth Pamidimarri</h1>
-            <p className="text-xl text-gray-600 mb-4">Full Stack Developer & AI Enthusiast</p>
-            
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">
+              Ashruth Pamidimarri
+            </h1>
+            <p className="text-xl text-gray-600 mb-4">
+              Full Stack Developer & AI Enthusiast
+            </p>
+
             <div className="flex flex-wrap gap-4 text-sm text-gray-500 mb-6">
               <div className="flex items-center gap-1">
                 <MapPin size={16} />
@@ -136,23 +152,36 @@ const ProfileModal = ({ onClose }: ProfileModalProps) => {
             <div className="bg-gray-50 rounded-2xl p-6 mb-8">
               <h2 className="text-xl font-bold text-gray-800 mb-4">About</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                I'm a Computer Science Engineering student at SNIST with a strong foundation in Data Structures and Algorithms and experience in C, Java, Python, and JavaScript.
+                I'm a Computer Science Engineering student at SNIST with a
+                strong foundation in Data Structures and Algorithms and
+                experience in C, Java, Python, and JavaScript.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                With 500+ LeetCode problems solved, a 9.11 CGPA, and projects like LRU Cache Simulator, FarmSmartAI, and a Trie-based AutoSearch Engine, I thrive on solving complex challenges.
+                With 500+ LeetCode problems solved, a 9.11 CGPA, and projects
+                like LRU Cache Simulator, FarmSmartAI, and a Trie-based
+                AutoSearch Engine, I thrive on solving complex challenges.
               </p>
             </div>
           </div>
 
           {/* Skills */}
           <div className="mb-8">
-            <h2 className="text-xl font-bold text-gray-800 mb-6">Technical Skills</h2>
+            <h2 className="text-xl font-bold text-gray-800 mb-6">
+              Technical Skills
+            </h2>
             <div className="space-y-4">
               {skills.map((skill, index) => (
-                <div key={index} className="bg-white rounded-lg p-4 border border-gray-200">
+                <div
+                  key={index}
+                  className="bg-white rounded-lg p-4 border border-gray-200"
+                >
                   <div className="flex justify-between items-center mb-2">
-                    <span className="font-medium text-gray-800">{skill.name}</span>
-                    <span className="text-sm text-gray-600">{skill.level}%</span>
+                    <span className="font-medium text-gray-800">
+                      {skill.name}
+                    </span>
+                    <span className="text-sm text-gray-600">
+                      {skill.level}%
+                    </span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div
@@ -170,14 +199,25 @@ const ProfileModal = ({ onClose }: ProfileModalProps) => {
             <h2 className="text-xl font-bold text-gray-800 mb-6">Education</h2>
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <div key={index} className="flex gap-6 p-4 bg-white rounded-lg border border-gray-200">
+                <div
+                  key={index}
+                  className="flex gap-6 p-4 bg-white rounded-lg border border-gray-200"
+                >
                   <div className="text-center min-w-[60px]">
-                    <span className="text-lg font-bold text-gray-800">{edu.year}</span>
+                    <span className="text-lg font-bold text-gray-800">
+                      {edu.year}
+                    </span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-800 mb-1">{edu.degree}</h3>
-                    <p className="text-gray-600 text-sm mb-1">{edu.institution}</p>
-                    <p className="text-gray-600 text-sm mb-2 font-medium">{edu.grade}</p>
+                    <h3 className="font-bold text-gray-800 mb-1">
+                      {edu.degree}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-1">
+                      {edu.institution}
+                    </p>
+                    <p className="text-gray-600 text-sm mb-2 font-medium">
+                      {edu.grade}
+                    </p>
                     <p className="text-gray-500 text-sm">{edu.description}</p>
                   </div>
                 </div>
@@ -187,12 +227,19 @@ const ProfileModal = ({ onClose }: ProfileModalProps) => {
 
           {/* Achievements */}
           <div className="mb-8">
-            <h2 className="text-xl font-bold text-gray-800 mb-6">Key Achievements</h2>
+            <h2 className="text-xl font-bold text-gray-800 mb-6">
+              Key Achievements
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {achievements.map((achievement, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100">
+                <div
+                  key={index}
+                  className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100"
+                >
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  <span className="text-gray-700 font-medium">{achievement}</span>
+                  <span className="text-gray-700 font-medium">
+                    {achievement}
+                  </span>
                 </div>
               ))}
             </div>
