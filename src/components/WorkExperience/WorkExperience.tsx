@@ -27,7 +27,7 @@ const workExperience: WorkExperienceItem[] = [
     "Worked on equity management platform features as a backend-focused intern.",
     responsibilities: [],
     isCurrent: true,
-    icon: `${import.meta.env.BASE_URL}pictures/experience/qapita.jpeg`
+    icon: `${import.meta.env.BASE_URL}experience/qapita.jpeg`
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const workExperience: WorkExperienceItem[] = [
       "Worked on equity management platform features as a backend-focused intern.",
     responsibilities: [],
     isCurrent: true,
-    icon: `${import.meta.env.BASE_URL}pictures/experience/qapita.jpeg`
+    icon: `${import.meta.env.BASE_URL}experience/qapita.jpeg`
   },
 ];
 
