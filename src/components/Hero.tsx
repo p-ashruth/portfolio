@@ -34,7 +34,8 @@ const Hero = () => {
           <p
             className="text-sm text-white mt-6 leading-relaxed max-w-xs opacity-90"
             style={{
-              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              fontFamily: "Lato, sans-serif",
+              fontSize: 17,
             }}
           >
             Building innovative solutions and creating seamless user experiences
@@ -67,7 +68,7 @@ const Hero = () => {
           <br />
           <h1
             className="mr-15 text-6xl md:text-7xl lg:text-8xl font-black text-white uppercase leading-none tracking-tight"
-            style={{ fontFamily: "Oswald, sans-serif", fontWeight: "800" }}
+            style={{ fontFamily: "Oswald, sans-serif", fontWeight: "800", padding: "1px" }}
           >
             DEVELOPER
           </h1>

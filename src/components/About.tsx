@@ -6,7 +6,8 @@ const About = () => {
           <h2
             className="text-4xl md:text-5xl font-bold mb-4 text-white"
             style={{
-              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              fontFamily: "Lato, sans-serif",
+              fontWeight: 900
             }}
           >
             About Me
@@ -14,13 +15,13 @@ const About = () => {
           <div className="w-20 h-1 bg-white mx-auto"></div>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-5 gap-20 items-center mb-16">
           {/* Content - smaller section */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="lg:col-span-2 space-y-4 pr-8">
             <p
               className="text-lg text-white leading-relaxed"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
               }}
             >
               I’m a Computer Science Engineering student at SNIST with a strong
@@ -30,7 +31,7 @@ const About = () => {
             <p
               className="text-lg text-white leading-relaxed"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
               }}
             >
               With 500+ LeetCode problems solved, a 9.11 CGPA, and projects like
@@ -40,7 +41,7 @@ const About = () => {
           </div>
 
           {/* Photo - bigger section */}
-          <div className="lg:col-span-3 relative flex justify-center items-center">
+          <div className="lg:col-span-3 relative flex justify-center items-center pl-8">
             <div className="relative group">
               {/* Floating elements */}
               <div className="absolute -top-6 -left-6 w-12 h-12 bg-emerald-500/20 rounded-full animate-pulse"></div>
@@ -76,7 +77,8 @@ const About = () => {
             <p
               className="text-white text-sm uppercase tracking-wider mb-4"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
+                fontSize: 18
               }}
             >
               WHAT I BRING TO THE TABLE
@@ -84,7 +86,8 @@ const About = () => {
             <h3
               className="text-4xl md:text-5xl font-bold text-white"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
+                fontWeight: 900,
               }}
             >
               Tech Skills
@@ -103,7 +106,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 Python
@@ -118,7 +121,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 Java
@@ -126,17 +129,17 @@ const About = () => {
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
-                alt="Power BI"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                alt="C#"
                 className="w-12 h-12 mb-3"
               />
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
-                Power BI
+                C# .NET
               </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
@@ -148,7 +151,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 PostgreSQL
@@ -163,7 +166,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 MySQL
@@ -171,17 +174,17 @@ const About = () => {
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                alt="Git"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
                 className="w-12 h-12 mb-3"
               />
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
-                git
+                GitHub
               </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
@@ -193,7 +196,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 docker
@@ -205,17 +208,17 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                alt="JavaScript"
-                className="w-12 h-12 mb-3"
+                src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                alt="Postman"
+                className="w-16 h-16 mb-3"
               />
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
-                JavaScript
+                Postman
               </span>
             </div>
             <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
@@ -227,7 +230,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 React JS
@@ -242,7 +245,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 Tailwind CSS
@@ -257,7 +260,7 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 Node JS
@@ -272,10 +275,126 @@ const About = () => {
               <span
                 className="text-black font-semibold text-sm"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
                 }}
               >
                 Express JS
+              </span>
+            </div>
+          </div>
+
+          {/* Third Row - 7 columns */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 justify-center mt-8">
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                TypeScript
+              </span>
+            </div>
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                alt="AWS"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                AWS
+              </span>
+            </div>
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg"
+                alt="Playwright"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                Playwright
+              </span>
+            </div>
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                alt="Pandas"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                Pandas
+              </span>
+            </div>
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="w-12 h-12 mb-3"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M20.998 10.949H24v3.102h-3v3.028h-1.487V20H18v-2.921h-1.487V20H15v-2.921H9V20H7.488v-2.921H6V20H4.487v-2.921H3V14.05H0V10.95h3V5h17.998v5.949zM6 10.949h1.488V8.102H6v2.847zm10.51 0H18V8.102h-1.49v2.847z"
+                  fill="#D97757"
+                  fillRule="evenodd"
+                />
+              </svg>
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                Gen AI
+              </span>
+            </div>
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                MongoDB
+              </span>
+            </div>
+            <div className="bg-white rounded-xl p-6 flex flex-col items-center justify-center aspect-square hover:scale-105 transition-transform duration-300">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/leetcode/leetcode-original.svg"
+                alt="LeetCode"
+                className="w-12 h-12 mb-3"
+              />
+              <span
+                className="text-black font-semibold text-sm"
+                style={{
+                  fontFamily: "Lato, sans-serif",
+                }}
+              >
+                DSA
               </span>
             </div>
           </div>

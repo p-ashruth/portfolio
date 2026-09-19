@@ -80,7 +80,8 @@ const Certifications = () => {
             <h2
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
+                fontWeight: 900,
               }}
             >
               Certifications
@@ -88,7 +89,7 @@ const Certifications = () => {
             <p
               className="text-lg text-gray-300 leading-relaxed max-w-lg"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
               }}
             >
               Earned certifications and hit milestones, all while learning from

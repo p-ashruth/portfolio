@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
+import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
@@ -16,6 +17,9 @@ function App() {
         <ScrollReveal>
           <About />
         </ScrollReveal>
+        <ScrollReveal>
+          <WorkExperience />
+        </ScrollReveal>
         <ScrollReveal delay={200}>
           <Projects />
         </ScrollReveal>
@@ -29,7 +33,7 @@ function App() {
 
       <footer className="bg-black/50 text-slate-400 py-8 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+          <p> Thank you for visiting! </p>
         </div>
       </footer>
     </div>

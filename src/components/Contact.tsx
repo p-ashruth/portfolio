@@ -62,7 +62,8 @@ const Contact = () => {
           <h2
             className="text-4xl md:text-5xl font-bold text-white mb-4"
             style={{
-              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              fontFamily: "Lato, sans-serif",
+              fontWeight: 900,
             }}
           >
             Get In Touch
@@ -71,7 +72,7 @@ const Contact = () => {
           <p
             className="text-lg text-white max-w-2xl mx-auto"
             style={{
-              fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+              fontFamily: "Lato, sans-serif",
             }}
           >
             Let's connect! Whether you have a question, want to collaborate, or
@@ -95,7 +96,8 @@ const Contact = () => {
                   <h3
                     className="text-2xl font-bold mb-4"
                     style={{
-                      fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                      fontFamily: "Lato, sans-serif",
+                      fontWeight: 900,
                     }}
                   >
                     Ashruth Pamidimarri
@@ -103,7 +105,7 @@ const Contact = () => {
                   <p
                     className="text-white mb-6"
                     style={{
-                      fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                      fontFamily: "Lato, sans-serif",
                     }}
                   >
                     Full Stack Developer passionate about creating innovative
@@ -121,7 +123,14 @@ const Contact = () => {
                         <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                           <info.icon size={16} />
                         </div>
-                        <span className="text-sm">{info.detail}</span>
+                        <span
+                          className="text-base"
+                          style={{
+                            fontFamily: "Lato, sans-serif",
+                          }}
+                        >
+                          {info.detail}
+                        </span>
                       </a>
                     ))}
                   </div>
@@ -144,7 +153,8 @@ const Contact = () => {
               <h3
                 className="text-2xl font-bold text-white mb-6"
                 style={{
-                  fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                  fontFamily: "Lato, sans-serif",
+                  fontWeight: 900,
                 }}
               >
                 Send me a message
@@ -154,7 +164,10 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-gray-700 mb-2"
+                      className="block text-sm font-medium text-white mb-2"
+                      style={{
+                        fontFamily: "Lato, sans-serif",
+                      }}
                     >
                       Your Name
                     </label>
@@ -166,6 +179,9 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-white border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder-gray-400"
+                      style={{
+                        fontFamily: "Lato, sans-serif",
+                      }}
                       placeholder="Enter your name"
                     />
                   </div>
@@ -173,7 +189,10 @@ const Contact = () => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-gray-700 mb-2"
+                      className="block text-sm font-medium text-white mb-2"
+                      style={{
+                        fontFamily: "Lato, sans-serif",
+                      }}
                     >
                       Your Email
                     </label>
@@ -185,6 +204,9 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-white border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder-gray-400"
+                      style={{
+                        fontFamily: "Lato, sans-serif",
+                      }}
                       placeholder="Enter your email address"
                     />
                   </div>
@@ -193,7 +215,10 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                    }}
                   >
                     Subject
                   </label>
@@ -205,6 +230,9 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-white border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all placeholder-gray-400"
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                    }}
                     placeholder="Enter your subject"
                   />
                 </div>
@@ -212,7 +240,10 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700 mb-2"
+                    className="block text-sm font-medium text-white mb-2"
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                    }}
                   >
                     Message
                   </label>
@@ -224,6 +255,9 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-white border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition-all resize-none placeholder-gray-400"
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                    }}
                     placeholder="Enter your message"
                   />
                 </div>
@@ -232,13 +266,21 @@ const Contact = () => {
                   type="submit"
                   disabled={status === "sending"}
                   className="w-full bg-black text-white px-8 py-4 rounded-lg font-medium hover:bg-gray-800 hover:scale-105 transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                  style={{
+                    fontFamily: "Lato, sans-serif",
+                  }}
                 >
                   {status === "sending" ? "Sending..." : "Send Message"}
                   <Send size={20} />
                 </button>
 
                 {status === "success" && (
-                  <div className="text-center text-green-600 font-medium">
+                  <div
+                    className="text-center text-green-600 font-medium"
+                    style={{
+                      fontFamily: "Lato, sans-serif",
+                    }}
+                  >
                     Message sent successfully! I'll get back to you soon.
                   </div>
                 )}

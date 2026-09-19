@@ -111,7 +111,8 @@ const Projects = () => {
             <h2
               className="text-4xl md:text-5xl font-bold mb-4 text-white"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
+                fontWeight: 900,
               }}
             >
               My Projects
