@@ -53,7 +53,7 @@ const Hero = () => {
             <br></br>
             <div className="w-80 h-[427px] md:w-96 md:h-[512px] bg-black rounded-3xl overflow-hidden shadow-2xl border border-white/20">
               <img
-                src={`${import.meta.env.BASE_URL}pictures/profile/Warangal.jpg`}
+                src={`${import.meta.env.BASE_URL}profile/Warangal.jpg`}
                 alt="Ashruth Pamidimarri"
                 className="w-full h-full object-cover"
               />
