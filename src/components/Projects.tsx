@@ -47,13 +47,12 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "FarmSmart AI",
+      title: "Wanderlust - Your Travel Partner",
       description:
-        "An interactive weather dashboard with forecasts, maps, and historical data visualization.",
+        "An Airbnb-style travel accommodation platform with property listings, booking management, and user reviews.",
       longDescription:
-        "An elegant weather dashboard that provides comprehensive weather information. Features include current weather conditions, 7-day forecasts, interactive weather maps, historical data visualization with charts, location-based weather alerts, and beautiful weather animations. Integrates with multiple weather APIs for accurate data.",
-      image:
-        "https://i.pinimg.com/736x/44/93/68/449368c4eae696c6857be2a79ff00d21.jpg",
+        "A comprehensive travel accommodation platform similar to Airbnb. Features include property listings with detailed descriptions, image galleries, advanced search and filtering, booking system with date selection, user authentication, payment integration, host profiles, and guest reviews. Built with modern technologies for a seamless user experience.",
+      image: `${import.meta.env.BASE_URL}projects/wanderlust.jpeg`,
       tags: ["React", "API Integration", "Charts.js", "CSS Animations"],
       github: "https://github.com",
       demo: "https://example.com",
@@ -80,9 +79,8 @@ const Projects = () => {
         "Simulation of Simple and Demand Paging using a page table and free frame list to manage memory allocation.",
       longDescription:
         "Simulation Simple and Demand Paging using a page table and free frame list to manage memory allocation.",
-      image:
-        "https://i.pinimg.com/736x/ab/a9/41/aba94111afe833e42a9dd5905dbeb565.jpg",
-      tags: ["Operating Systems", "Paging", "Memory Management"],
+      image: `${import.meta.env.BASE_URL}projects/operating-systems.jpeg`,
+      tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com",
       demo: "https://example.com",
       category: "Frontend",
@@ -91,11 +89,11 @@ const Projects = () => {
       id: 6,
       title: "Shadow Fight",
       description:
-        "Mobile-first fitness tracking app with workout plans and progress monitoring.",
+        "A dynamic fighting game with combat mechanics, character progression, and challenging opponents.",
       longDescription:
-        "A comprehensive fitness tracking application designed for mobile devices. Features include custom workout plans, exercise library with video demonstrations, progress tracking with charts, nutrition logging, goal setting, social features for motivation, and integration with wearable devices.",
+        "An action-packed fighting game featuring intense combat mechanics and strategic gameplay. Includes character customization, multiple fighting techniques, opponent AI with varying difficulty levels, progress tracking through levels, weapon upgrades, and engaging visual effects. Designed for immersive gaming experience with smooth animations and responsive controls.",
       image: `${import.meta.env.BASE_URL}projects/shadow-fight.jpeg`,
-      tags: ["React Native", "Firebase", "Redux", "Health APIs"],
+      tags: ["React JS", "C#", "Dotnet", "Mongo DB", "CQRS"],
       github: "https://github.com",
       demo: "https://example.com",
       category: "Mobile",
@@ -121,7 +119,7 @@ const Projects = () => {
             <p
               className="text-lg text-white max-w-2xl mx-auto"
               style={{
-                fontFamily: "Inter, system-ui, -apple-system, sans-serif",
+                fontFamily: "Lato, sans-serif",
               }}
             >
               A collection of projects that showcase my skills and creativity
