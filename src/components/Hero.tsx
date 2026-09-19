@@ -10,10 +10,10 @@ const Hero = () => {
           <div
             className="text-sm md:text-base text-white opacity-80"
             style={{
-              fontFamily: "Oswald, Inter, system-ui, -apple-system, sans-serif",
+              fontFamily: "Lato, sans-serif",
             }}
           >
-            HEY, THIS IS
+            Hey, I'm
           </div>
 
           <div
@@ -68,7 +68,11 @@ const Hero = () => {
           <br />
           <h1
             className="mr-15 text-6xl md:text-7xl lg:text-8xl font-black text-white uppercase leading-none tracking-tight"
-            style={{ fontFamily: "Oswald, sans-serif", fontWeight: "800", padding: "1px" }}
+            style={{
+              fontFamily: "Oswald, sans-serif",
+              fontWeight: "800",
+              padding: "1px",
+            }}
           >
             DEVELOPER
           </h1>
